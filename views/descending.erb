@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Directory Index</title>
+</head>
+<body>
+<h1>Directory Index</h1>
+  <a href= "/ascending">Sort ascending</a>
+  <a href= "/descending">Sort descending</a>
+  <ul>
+  <% @files.each do |file| %>
+    <li>
+    <a href="<%= file %>"><%= file %></a>
+    </li>
+  <% end %>
+  </ul>
+</body>
+</html>
